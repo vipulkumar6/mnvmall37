@@ -64,7 +64,7 @@ const Navbar = ({ sectionsRefs }) => {
                                 onClick={() => window.location.href = 'tel:+98xxxxxxxx'}
                             >
                                 <FiPhoneCall color='white' />
-                                <p>+91 98xxxxxxxx</p>
+                                <p>+91 98117 73111</p>
                             </span>
                             <Button onClick={handleDialogToggle} className="nav-button">Enquiry Now</Button>
 

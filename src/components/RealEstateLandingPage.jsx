@@ -41,14 +41,14 @@ export default function RealEstateLandingPage({ sectionsRefs }) {
     });
     const [errors, setErrors] = useState({});
 
-    // useEffect(() => {
-    //     setIsDialogOpen(true);
-    //     const timer = setTimeout(() => {
-    //         setIsDialogOpen(true);
-    //     }, 15000);
+    useEffect(() => {
+        setIsDialogOpen(true);
+        const timer = setTimeout(() => {
+            setIsDialogOpen(true);
+        }, 15000);
 
-    //     return () => clearTimeout(timer);
-    // }, []);
+        return () => clearTimeout(timer);
+    }, []);
 
     const handleCloseDialog = () => {
         setIsDialogOpen(false);
