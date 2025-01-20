@@ -9,7 +9,7 @@ import Thankyou from './components/Thankyou';
 import Marquee from './components/MarqueeContent';
 
 const App = () => {
-  const avatar_url = './images/iris-logo.svg';
+  const avatar_url = './images/mvn-mall-Logo.png';
 
   const sectionsRefs = {
     hero: useRef(null),
