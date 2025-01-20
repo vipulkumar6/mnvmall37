@@ -76,7 +76,7 @@ export default function Location() {
         <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white md:p-8 py-6">
             <div className="max-w-7xl mx-auto space-y-12">
                 <div className="text-center space-y-4">
-                    <h1 className="text-5xl font-bold text-amber-400 ">MVN Mall Sector 37D Prime Location</h1>
+                    <h1 className="lg:text-5xl text-3xl font-bold text-amber-400 ">MVN Mall Sector 37D Prime Location</h1>
                     <p className="text-2xl text-amber-200">Unparalleled Connectivity & Convenience</p>
                 </div>
 

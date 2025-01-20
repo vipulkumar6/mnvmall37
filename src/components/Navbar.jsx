@@ -48,7 +48,7 @@ const Navbar = ({ sectionsRefs }) => {
 
                         {/* Hamburger Menu for Mobile */}
                         <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                            {isMobileMenuOpen ? <FiX size={24} color='white' /> : <FiMenu size={24} />}
+                            {isMobileMenuOpen ? <FiX size={24} color='white' /> : <FiMenu size={24} color='white' />}
                         </div>
 
                         <div className={`nav-links-container ${isMobileMenuOpen ? 'open' : ''}`}>
