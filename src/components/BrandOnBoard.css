@@ -1,0 +1,78 @@
+.brands-on-board-container {
+    background: none !important;
+    padding: 10px 140px !important;
+}
+
+.tab-content-container {
+    animation: fadeIn 0.5s ease-in-out;
+
+}
+
+
+.brands-on-board-container .tabs {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .brands-on-board-container {
+        background: none !important;
+
+        padding: 10px 10px !important;
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tab-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.brand-logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .brand-logo {
+        max-width: 180px;
+    }
+
+    .tab-content {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        max-width: 130px;
+    }
+
+    .tab-content {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+}

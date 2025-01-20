@@ -1,0 +1,152 @@
+.AppContainer {
+    height: 70vh;
+    color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Text {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #02203c;
+}
+
+.Note {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 35px;
+    color: #7c8e9a;
+    text-align: center;
+
+}
+
+.Marquee {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    user-select: none;
+
+}
+
+@keyframes scrollX {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.MarqueeGroup {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 100%;
+    animation: scrollX 35s linear infinite;
+}
+
+.MarqueeGroup2 {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    white-space: nowrap;
+    width: 100%;
+    animation: scrollX 35s linear infinite reverse;
+    animation-delay: -3s;
+}
+
+.ImageGroup {
+    display: grid;
+    place-items: center;
+    width: clamp(10rem, 1rem + 40vmin, 30rem);
+    padding: calc(clamp(14rem, 1rem + 30vmin, 30rem) / 12);
+}
+
+.Image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+    padding: 5px 15px;
+    color: #8996A9;
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: grayscale(100%); */
+    cursor: pointer;
+    /* border: 1px solid; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.Marquee:hover .MarqueeGroup,
+.Marquee:hover .MarqueeGroup2 {
+    animation-play-state: paused;
+}
+
+@media (max-width: 700px) {
+
+    .AppContainer {}
+
+    .Marquee {
+        width: 100%;
+
+    }
+
+    .MarqueeGroup {
+        width: 200%;
+        animation: scrollX 35s linear infinite;
+    }
+
+    .MarqueeGroup2 {
+        width: 200%;
+        animation: scrollX 35s linear infinite reverse;
+        animation-delay: -3s;
+    }
+
+    .ImageGroup {
+        width: 50%;
+        padding: 0;
+    }
+
+    .Image {
+        width: 100%;
+        height: auto;
+    }
+
+    .Note {
+        text-align: center;
+        font-size: 16px;
+
+
+    }
+
+    .media_texts {
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .media_texts .heading_h1 {
+        font-size: 24px;
+    }
+}
+
+.media_texts {
+
+    text-align: center;
+}
