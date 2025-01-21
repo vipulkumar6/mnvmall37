@@ -263,6 +263,9 @@ export default function RealEstateLandingPage({ sectionsRefs }) {
                         {/* <div style={{ position: 'absolute', top: '70px', width: '100%' }}>
                             <Marquee />
                         </div> */}
+                        {/* <div style={{ position: 'absolute', top: '80px', width: '100%' }} >
+                            <img width={400} src="./images/mvn-mall-Logo.png" alt="/mnn-mall-Logo" />
+                        </div> */}
 
                         <img src="https://www.themvnmall.com/wp-content/uploads/2025/01/gallery1.jpg" alt="Luxurious home" className="hero-image" />
                         <motion.div
@@ -342,11 +345,11 @@ export default function RealEstateLandingPage({ sectionsRefs }) {
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <FaPhone className="text-primary" />
-                                    <p>+91 9999999999</p>
+                                    <p>+91 9811773111</p>
                                 </div>
                                 <div className="flex items-center space-x-4">
                                     <CiMail className="text-primary" />
-                                    <p>info@gmail.in</p>
+                                    <p>sales@allegiantgroup.in</p>
                                 </div>
                                 <div className="mt-8">
                                     <div style={{ width: '100%' }}><iframe title='map IRIS' width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=MVN%20Mall%20Infrastructure,%20Sector%2037D,%20Gurugram,%20Haryana%20122004+(MVN%20Mall%20Sector%2037D)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
@@ -373,7 +376,15 @@ export default function RealEstateLandingPage({ sectionsRefs }) {
 
                 {/* Footer Content */}
                 <div className="footer-content">
-                    <img onClick={() => scrollToSection("hero")} src="./images/mvn-mall-Logo.png" alt="Logo" className="footer-logo" />
+
+                    <ul className="footer-links">
+                        <li><a className='flex justify-start content-normal  items-center' href="mailto:sales@allegiantgroup.in"> <CiMail className='mr-2' /> sales@allegiantgroup.in</a></li>
+                        <li><a className='flex justify-start content-normal  items-center' href="tel:+919811773111"> <IoCall className='mr-2' /> +91 9811773111</a></li>
+
+                    </ul>
+                </div>
+                <div className="footer-content">
+                    <img onClick={() => scrollToSection("hero")} src="./images/11.png" alt="Logo" className="footer-logo" />
                     <ul className="footer-links">
                         <li><a onClick={() => scrollToSection("hero")}>Home</a></li>
                         <li><a onClick={() => scrollToSection("about")}>About Us</a></li>

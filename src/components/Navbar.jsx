@@ -43,7 +43,7 @@ const Navbar = ({ sectionsRefs }) => {
                         <Link to='/'
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
-                            <img className='brand_logo' src="./images/mvn-mall-Logo.png" alt="MVN Mall Sector 37D, Gurugram, Haryana Logo" />
+                            <img className='brand_logo' src="./images/11.png" alt="MVN Mall Sector 37D, Gurugram, Haryana Logo" />
                         </Link>
 
                         {/* Hamburger Menu for Mobile */}

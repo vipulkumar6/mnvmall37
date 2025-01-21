@@ -83,7 +83,7 @@ const DialogBox = ({ open, OnClose }) => {
 
     return (
         <div>
-            <Dialog open={open} onClose={OnClose} maxWidth="xs" fullWidth>
+            <Dialog open={open} onClose={OnClose} maxWidth="lg" fullScreen={true}>
                 <DialogTitle
                     sx={{ fontSize: '1.25rem', padding: '8px 16px', display: 'flex', alignItems: 'center' }}
                 >
@@ -96,7 +96,7 @@ const DialogBox = ({ open, OnClose }) => {
                         <MdClose />
                     </IconButton>
                 </DialogTitle>
-                <DialogContent dividers sx={{ padding: '8px 16px' }}>
+                <DialogContent dividers sx={{ padding: '10px 16px' }}>
 
 
                     {success ? (
@@ -107,7 +107,7 @@ const DialogBox = ({ open, OnClose }) => {
                     ) : (
                         <div>
                             <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                                <h1 style={{ margin: '0', fontSize: '1.5rem', color: '#333' }}>MVN Mall, Sector 37D</h1>
+                                <h1 style={{ margin: '0', fontSize: '1.2rem', color: '#333' }}>MVN Mall, Sector 37D</h1>
                                 <p style={{ margin: '4px 0 16px', fontSize: '1rem', color: '#666' }}>Gurugram,Haryana</p>
                             </div>
 
