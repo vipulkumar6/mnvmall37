@@ -263,9 +263,9 @@ export default function RealEstateLandingPage({ sectionsRefs }) {
                         {/* <div style={{ position: 'absolute', top: '70px', width: '100%' }}>
                             <Marquee />
                         </div> */}
-                        {/* <div style={{ position: 'absolute', top: '80px', width: '100%' }} >
-                            <img width={400} src="./images/mvn-mall-Logo.png" alt="/mnn-mall-Logo" />
-                        </div> */}
+                        <div style={{ position: 'absolute', top: '80px', width: '100%' }} >
+                            <img width={350} src="./images/mvn-mall-Logo.png" alt="/mnn-mall-Logo" />
+                        </div>
 
                         <img src="https://www.themvnmall.com/wp-content/uploads/2025/01/gallery1.jpg" alt="Luxurious home" className="hero-image" />
                         <motion.div
